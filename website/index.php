@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muzon 2nd Citizens Information</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background: linear-gradient(to right, #3498db, #2ecc71);
+            color: #ffffff;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .pp {
+            margin-top: 10px;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        button {
+            background-color: #2ecc71;
+            color: #ffffff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        /* Hover animation for button */
+        button:hover {
+            background-color: #27ae60;
+        }
+
+        section {
+            padding: 40px;
+            color: #333;
+        }
+       
+        footer {
+            background: #333;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>Muzon Segundo <br> Municipality of Alitagtag <br> Province of Batangas</h3>
+        <p class = "pp">Muzon 2nd Citizen's Information</p>
+    </header>
+
+    <nav>
+        <a href = "#">Home</a>
+        <a href = "about.php">About Us</a>
+        <a href = "#">Services</a>
+        <a href = "#">Register</a>
+        <a href = "#">Contact</a>
+    </nav>
+
+    <section class = "section">
+        <h3>Welcome to Muzon 2nd Citizen's Information</h3>
+        <p>Discover the heart of Muzon 2nd! We're here to keep you informed about our vibrant community, services, and exciting events. Let's explore together and stay connected.</p>
+
+        <?php
+            // Example PHP inclusion for dynamic content
+            $currentYear = date("Y");
+            $info = "Discover Muzon 2nd: Your Gateway to Community, Services, and Excitement!";
+            echo "<p>$info</p>";
+        ?>
+    </section>
+
+    <footer>
+        <p>&copy; <?php echo $currentYear; ?> Muzon 2nd Citizens Information. All rights reserved.</p>
+    </footer>
+</body>
+</html>
